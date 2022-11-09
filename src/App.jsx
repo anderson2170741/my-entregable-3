@@ -52,15 +52,21 @@ function App() {
         </div>
       </div>
       <div className='map'>
-        <ul>
-          {location.residents?.map((location) => (
-            <Characters
-              location={location}
-              url={location}
-              key={location}
-            />
-          ))}
-        </ul>
+        <div className='map-container'>
+          <ul>
+            {location.residents?.map((location) => (
+              <Characters
+                location={location}
+                url={location}
+                key={location}
+              />
+            ))}
+          </ul>
+
+        </div>
+        <footer>
+            <h3>© Anderson Durán</h3>
+        </footer>
       </div>
 
     </div>

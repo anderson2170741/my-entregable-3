@@ -99,6 +99,9 @@ p {
   top: 552px;
   text-decoration: none;
   background-color: black;
+}
+
+.map-container {
   display: flex;
   justify-content: center;
 }
@@ -151,6 +154,74 @@ ul {
   text-decoration: none;
 }
 
+footer {
+  padding: 30px;
+  height: 100%;
+  border-top: 2px solid #979A9A;
+  text-align: center;
+  font-size: 18px;
+  color: #979A9A;
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+  .background {
+    height: 340px;
+    background-size: 100% 350px;
+  }
+
+  .title {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .search {
+    top: 340px;
+  }
+
+  input {
+    width: 17rem;
+  }
+
+  button {
+    width: 8rem;
+  }
+
+  .information {
+    top: 400px;
+    height: 370px;
+  }
+
+  .container-information {
+    width: 87%;
+    height: 340px;
+    display: grid;
+    place-items: center;
+  }
+
+  .cont {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .map {
+    top: 770px;
+  }
+
+  .resident-card {
+    width: 350px;
+    height: 420px;
+  }
+
+  .resident-card img {
+    width: 350px;
+    height: 240px;
+  }
+
+}
 
 @media only screen and (min-width:320px) and (max-width:480px) {
   .background {
@@ -203,7 +274,11 @@ ul {
 
   .resident-card {
     width: 280px;
-    height: 430px;
+    height: 420px;
+  }
+
+  footer {
+    font-size: 13px;
   }
 
 }
