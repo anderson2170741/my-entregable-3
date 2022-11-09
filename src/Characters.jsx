@@ -21,14 +21,13 @@ const Characters = ({ url }) => {
                     <h2>{location.name}</h2>
                     <h3>Status:</h3>
                     <p>{location.status}</p>
-                    <h3>Origin:</h3>                    
+                    <h3>Origin:</h3>
                     <p>{location.origin?.name}</p>
                     <h3>Appearance in episodes:</h3>
                     <p>{location.episode?.length}</p>
                 </div>
             </li>
         </div>
-
     );
 };
 
